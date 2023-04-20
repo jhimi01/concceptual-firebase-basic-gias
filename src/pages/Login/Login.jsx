@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css'
+import Button from '../../component/Buttons/Button';
 
 const Login =()=> {
   const [email, setEmail] = useState('');
@@ -28,7 +29,12 @@ const Login =()=> {
         </label>
         <br />
         <button type="submit">Login</button>
+        <p>or</p>
       </form>
+      <hr />
+      <div style={{textAlign: 'center'}}>
+      <Button></Button>
+      </div>
     </div>
   );
 }
